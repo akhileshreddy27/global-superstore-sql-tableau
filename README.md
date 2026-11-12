@@ -119,10 +119,3 @@ python3 scripts/build_tableau_workbook.py
 | [`tableau/superstore_tableau_source.csv`](tableau/superstore_tableau_source.csv) | Line-level data exported from the MySQL view `v_orders_enriched` |
 | [`TABLEAU_DASHBOARD_GUIDE.md`](TABLEAU_DASHBOARD_GUIDE.md) | Dashboard contents, calculated fields, how to open the workbook |
 | [`PROJECT_REPORT.md`](PROJECT_REPORT.md) | Full project report |
-
-## Resume bullets
-
-**Sales Data SQL & Tableau Analysis | MySQL, Tableau, Excel**
-- Analyzed **51K+ retail order lines (25K orders)** in **MySQL 8**, writing 22 queries with **joins, CTEs, aggregations and window functions** (LAG, RANK, running totals, moving averages) to uncover sales and profitability trends.
-- Built an **interactive 3-dashboard Tableau workbook** tracking **$12.64M sales, $1.47M profit and 11.61% profit margin**, with click-to-filter actions across market, sub-category and segment.
-- Identified **90.3% sales growth from 2011–2014** and showed that discounts above 20% turned a 21% margin into –42%, **erasing $815K of profit**.
