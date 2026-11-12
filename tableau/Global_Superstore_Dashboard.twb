@@ -1,0 +1,1793 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<workbook source-build='0.0.0 (0000.25.1204.2135)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.ExplainData_AuthorControls.true...ExplainData_AuthorControls />
+    <_.fcp.ExplainData_NullValueExplanation.true...ExplainData_NullValueExplanation />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <VizInTooltipHideWorksheet />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneFriendlyName />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption="Global Superstore (MySQL v_orders_enriched)" inline='true' name='federated.superstore01' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Superstore Extract' name='hyper.superstore01'>
+            <connection authentication='auth-none' author-locale='en_US' class='hyper' dbname='Data/superstore_extract.hyper' default-settings='yes' port='' sslmode='' username='tableau_internal_user' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='hyper.superstore01' name='Extract' table='[Extract].[Extract]' type='table' />
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='hyper.superstore01' name='Extract' table='[Extract].[Extract]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Row ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Row ID]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Row ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders Enriched]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Order ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Order ID]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Order ID</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders Enriched]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Order Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Order Date]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Order Date</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders Enriched]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ship Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Ship Date]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Ship Date</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders Enriched]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ship Mode</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Ship Mode]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Ship Mode</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders Enriched]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Customer ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Customer ID]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Customer ID</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders Enriched]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Customer Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Customer Name]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Customer Name</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders Enriched]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Segment</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Segment]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Segment</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders Enriched]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>City</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[City]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>City</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders Enriched]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders Enriched]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders Enriched]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Market</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Market]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Market</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders Enriched]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Region</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Region]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Region</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders Enriched]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Market Region</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Market Region]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Market Region</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders Enriched]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Regional Manager</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Regional Manager]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Regional Manager</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders Enriched]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Product ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Product ID]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Product ID</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders Enriched]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Category]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Category</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders Enriched]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sub-Category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Sub-Category]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Sub-Category</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders Enriched]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Product Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Product Name]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Product Name</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders Enriched]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sales</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Sales]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Sales</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders Enriched]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Quantity</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Quantity]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Quantity</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders Enriched]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Discount</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Discount]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Discount</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders Enriched]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Discount Band</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Discount Band]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Discount Band</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders Enriched]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Profit</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Profit]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Profit</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders Enriched]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Shipping Cost</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Shipping Cost]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Shipping Cost</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders Enriched]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Order Priority</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Order Priority]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Order Priority</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders Enriched]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ship Days</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Ship Days]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Ship Days</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders Enriched]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Returned</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Returned]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Returned</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders Enriched]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Returns Tracked</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Returns Tracked]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Returns Tracked</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders Enriched]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='real' default-format='c"$"#,##0;-"$"#,##0' name='[Sales]' role='measure' type='quantitative' />
+      <column datatype='real' default-format='c"$"#,##0;-"$"#,##0' name='[Profit]' role='measure' type='quantitative' />
+      <column datatype='real' default-format='c"$"#,##0;-"$"#,##0' name='[Shipping Cost]' role='measure' type='quantitative' />
+      <column datatype='real' default-format="p0%" name='[Discount]' role='measure' type='quantitative' />
+      <column caption="Profit Margin" datatype='real' name='[Calculation_ProfitMargin]' role='measure' type='quantitative' default-format="p0.0%">
+        <calculation class='tableau' formula="SUM([Profit]) / SUM([Sales])" />
+      </column>
+      <column caption="Average Order Value" datatype='real' name='[Calculation_AOV]' role='measure' type='quantitative' default-format='c"$"#,##0;-"$"#,##0'>
+        <calculation class='tableau' formula="SUM([Sales]) / COUNTD([Order ID])" />
+      </column>
+      <column caption="Returned Order" datatype='string' name='[Calculation_ReturnedOrder]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula="IF [Returned] = 'Yes' THEN [Order ID] END" />
+      </column>
+      <column caption="Return Rate" datatype='real' name='[Calculation_ReturnRate]' role='measure' type='quantitative' default-format="p0.0%">
+        <calculation class='tableau' formula="COUNTD(IF [Returned] = 'Yes' THEN [Order ID] END) / COUNTD([Order ID])" />
+      </column>
+      <column caption="Orders" datatype='real' name='[Calculation_Orders]' role='measure' type='quantitative' default-format="n#,##0">
+        <calculation class='tableau' formula="COUNTD([Order ID])" />
+      </column>
+      <column caption="Customers" datatype='real' name='[Calculation_Customers]' role='measure' type='quantitative' default-format="n#,##0">
+        <calculation class='tableau' formula="COUNTD([Customer Name])" />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='Orders Enriched' datatype='table' name='[__tableau_internal_object_id__].[Orders Enriched]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Orders Enriched' id='Orders Enriched'>
+            <properties context=''>
+              <relation connection='hyper.superstore01' name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption="Filter Executive Overview by Sales by Market" name='[Action1]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard="Executive Overview" type='sheet' worksheet="Sales by Market" />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value="Executive Overview" />
+      </command>
+    </action>
+    <action caption="Filter Product &amp; Profitability by Profit by Sub-Category" name='[Action2]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard="Product &amp; Profitability" type='sheet' worksheet="Profit by Sub-Category" />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value="Product &amp; Profitability" />
+      </command>
+    </action>
+    <action caption="Filter Customers, Regions &amp; Operations by Segment Performance" name='[Action3]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard="Customers, Regions &amp; Operations" type='sheet' worksheet="Segment Performance" />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value="Customers, Regions &amp; Operations" />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name="KPI Sales">
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='12'>Total Sales</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption="Global Superstore (MySQL v_orders_enriched)" name='federated.superstore01' />
+          </datasources>
+          <datasource-dependencies datasource='federated.superstore01'>
+            <column datatype='real' name='[Sales]' role='measure' type='quantitative' />
+            <column-instance column='[Sales]' derivation='Sum' name='[sum:Sales:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Text' />
+            <encodings>
+              <text column='[federated.superstore01].[sum:Sales:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='font-size' value='24' />
+                <format attr='font-weight' value='bold' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows></rows>
+        <cols></cols>
+      </table>
+      <simple-id uuid='{DC8895DC-2D3F-5C3B-A310-135F642D8881}' />
+    </worksheet>
+    <worksheet name="KPI Profit">
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='12'>Total Profit</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption="Global Superstore (MySQL v_orders_enriched)" name='federated.superstore01' />
+          </datasources>
+          <datasource-dependencies datasource='federated.superstore01'>
+            <column datatype='real' name='[Profit]' role='measure' type='quantitative' />
+            <column-instance column='[Profit]' derivation='Sum' name='[sum:Profit:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Text' />
+            <encodings>
+              <text column='[federated.superstore01].[sum:Profit:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='font-size' value='24' />
+                <format attr='font-weight' value='bold' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows></rows>
+        <cols></cols>
+      </table>
+      <simple-id uuid='{0FE76164-ED9A-55B0-BE72-921F74C809E8}' />
+    </worksheet>
+    <worksheet name="KPI Margin">
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='12'>Profit Margin</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption="Global Superstore (MySQL v_orders_enriched)" name='federated.superstore01' />
+          </datasources>
+          <datasource-dependencies datasource='federated.superstore01'>
+            <column caption="Profit Margin" datatype='real' name='[Calculation_ProfitMargin]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula="SUM([Profit]) / SUM([Sales])" />
+            </column>
+            <column-instance column='[Calculation_ProfitMargin]' derivation='User' name='[usr:Calculation_ProfitMargin:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Text' />
+            <encodings>
+              <text column='[federated.superstore01].[usr:Calculation_ProfitMargin:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='font-size' value='24' />
+                <format attr='font-weight' value='bold' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows></rows>
+        <cols></cols>
+      </table>
+      <simple-id uuid='{EB91918E-ABAA-5E33-80A1-56EE199FDE14}' />
+    </worksheet>
+    <worksheet name="KPI Orders">
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='12'>Orders</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption="Global Superstore (MySQL v_orders_enriched)" name='federated.superstore01' />
+          </datasources>
+          <datasource-dependencies datasource='federated.superstore01'>
+            <column caption="Orders" datatype='real' name='[Calculation_Orders]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula="COUNTD([Order ID])" />
+            </column>
+            <column-instance column='[Calculation_Orders]' derivation='User' name='[usr:Calculation_Orders:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Text' />
+            <encodings>
+              <text column='[federated.superstore01].[usr:Calculation_Orders:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='font-size' value='24' />
+                <format attr='font-weight' value='bold' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows></rows>
+        <cols></cols>
+      </table>
+      <simple-id uuid='{AAC0783E-8F37-514C-8E77-E1E620868B62}' />
+    </worksheet>
+    <worksheet name="KPI Return Rate">
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='12'>Return Rate</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption="Global Superstore (MySQL v_orders_enriched)" name='federated.superstore01' />
+          </datasources>
+          <datasource-dependencies datasource='federated.superstore01'>
+            <column caption="Return Rate" datatype='real' name='[Calculation_ReturnRate]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula="COUNTD(IF [Returned] = 'Yes' THEN [Order ID] END) / COUNTD([Order ID])" />
+            </column>
+            <column-instance column='[Calculation_ReturnRate]' derivation='User' name='[usr:Calculation_ReturnRate:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Text' />
+            <encodings>
+              <text column='[federated.superstore01].[usr:Calculation_ReturnRate:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='font-size' value='24' />
+                <format attr='font-weight' value='bold' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows></rows>
+        <cols></cols>
+      </table>
+      <simple-id uuid='{C503A298-F5BB-5CDC-8376-8C7D7AFC6727}' />
+    </worksheet>
+    <worksheet name="Monthly Sales Trend">
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='12'>Monthly Sales Trend</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption="Global Superstore (MySQL v_orders_enriched)" name='federated.superstore01' />
+          </datasources>
+          <datasource-dependencies datasource='federated.superstore01'>
+            <column datatype='real' name='[Sales]' role='measure' type='quantitative' />
+            <column datatype='date' name='[Order Date]' role='dimension' type='ordinal' />
+            <column datatype='real' name='[Profit]' role='measure' type='quantitative' />
+            <column caption="Profit Margin" datatype='real' name='[Calculation_ProfitMargin]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula="SUM([Profit]) / SUM([Sales])" />
+            </column>
+            <column-instance column='[Sales]' derivation='Sum' name='[sum:Sales:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Order Date]' derivation='Month-Trunc' name='[tmn:Order Date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Profit]' derivation='Sum' name='[sum:Profit:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_ProfitMargin]' derivation='User' name='[usr:Calculation_ProfitMargin:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <tooltip column='[federated.superstore01].[sum:Profit:qk]' />
+              <tooltip column='[federated.superstore01].[usr:Calculation_ProfitMargin:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.superstore01].[sum:Sales:qk]</rows>
+        <cols>[federated.superstore01].[tmn:Order Date:qk]</cols>
+      </table>
+      <simple-id uuid='{80C77757-293A-568F-87E1-741587CCCEFC}' />
+    </worksheet>
+    <worksheet name="Sales by Year">
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='12'>Sales by Year</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption="Global Superstore (MySQL v_orders_enriched)" name='federated.superstore01' />
+          </datasources>
+          <datasource-dependencies datasource='federated.superstore01'>
+            <column datatype='real' name='[Sales]' role='measure' type='quantitative' />
+            <column datatype='date' name='[Order Date]' role='dimension' type='ordinal' />
+            <column datatype='real' name='[Profit]' role='measure' type='quantitative' />
+            <column caption="Profit Margin" datatype='real' name='[Calculation_ProfitMargin]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula="SUM([Profit]) / SUM([Sales])" />
+            </column>
+            <column-instance column='[Sales]' derivation='Sum' name='[sum:Sales:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Order Date]' derivation='Year' name='[yr:Order Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Profit]' derivation='Sum' name='[sum:Profit:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_ProfitMargin]' derivation='User' name='[usr:Calculation_ProfitMargin:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <text column='[federated.superstore01].[sum:Sales:qk]' />
+              <tooltip column='[federated.superstore01].[sum:Profit:qk]' />
+              <tooltip column='[federated.superstore01].[usr:Calculation_ProfitMargin:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.superstore01].[sum:Sales:qk]</rows>
+        <cols>[federated.superstore01].[yr:Order Date:ok]</cols>
+      </table>
+      <simple-id uuid='{AC0D763C-CCA4-58C5-869A-DB0DBD2BC2BE}' />
+    </worksheet>
+    <worksheet name="Sales by Market">
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='12'>Sales by Market (colour = profit margin) — click to filter</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption="Global Superstore (MySQL v_orders_enriched)" name='federated.superstore01' />
+          </datasources>
+          <datasource-dependencies datasource='federated.superstore01'>
+            <column datatype='string' name='[Market]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Sales]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Profit]' role='measure' type='quantitative' />
+            <column caption="Orders" datatype='real' name='[Calculation_Orders]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula="COUNTD([Order ID])" />
+            </column>
+            <column caption="Profit Margin" datatype='real' name='[Calculation_ProfitMargin]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula="SUM([Profit]) / SUM([Sales])" />
+            </column>
+            <column-instance column='[Market]' derivation='None' name='[none:Market:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Sales]' derivation='Sum' name='[sum:Sales:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Profit]' derivation='Sum' name='[sum:Profit:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_Orders]' derivation='User' name='[usr:Calculation_Orders:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_ProfitMargin]' derivation='User' name='[usr:Calculation_ProfitMargin:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.superstore01].[none:Market:nk]' direction='DESC' using='[federated.superstore01].[sum:Sales:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.superstore01].[usr:Calculation_ProfitMargin:qk]' />
+              <text column='[federated.superstore01].[sum:Sales:qk]' />
+              <tooltip column='[federated.superstore01].[sum:Profit:qk]' />
+              <tooltip column='[federated.superstore01].[usr:Calculation_Orders:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.superstore01].[none:Market:nk]</rows>
+        <cols>[federated.superstore01].[sum:Sales:qk]</cols>
+      </table>
+      <simple-id uuid='{D7DA0EE2-AF51-5F8C-ADFB-F7CB5A0B4CA7}' />
+    </worksheet>
+    <worksheet name="Sales by Category">
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='12'>Sales by Category (label = margin)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption="Global Superstore (MySQL v_orders_enriched)" name='federated.superstore01' />
+          </datasources>
+          <datasource-dependencies datasource='federated.superstore01'>
+            <column datatype='string' name='[Category]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Sales]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Profit]' role='measure' type='quantitative' />
+            <column caption="Profit Margin" datatype='real' name='[Calculation_ProfitMargin]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula="SUM([Profit]) / SUM([Sales])" />
+            </column>
+            <column-instance column='[Category]' derivation='None' name='[none:Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Sales]' derivation='Sum' name='[sum:Sales:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Profit]' derivation='Sum' name='[sum:Profit:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_ProfitMargin]' derivation='User' name='[usr:Calculation_ProfitMargin:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.superstore01].[none:Category:nk]' direction='DESC' using='[federated.superstore01].[sum:Sales:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <text column='[federated.superstore01].[usr:Calculation_ProfitMargin:qk]' />
+              <tooltip column='[federated.superstore01].[sum:Profit:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.superstore01].[none:Category:nk]</rows>
+        <cols>[federated.superstore01].[sum:Sales:qk]</cols>
+      </table>
+      <simple-id uuid='{3D5E997C-3F57-533C-B805-AD18973EDACF}' />
+    </worksheet>
+    <worksheet name="Profit by Sub-Category">
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='12'>Profit by Sub-Category — click to filter</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption="Global Superstore (MySQL v_orders_enriched)" name='federated.superstore01' />
+          </datasources>
+          <datasource-dependencies datasource='federated.superstore01'>
+            <column datatype='string' name='[Sub-Category]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Profit]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Sales]' role='measure' type='quantitative' />
+            <column caption="Profit Margin" datatype='real' name='[Calculation_ProfitMargin]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula="SUM([Profit]) / SUM([Sales])" />
+            </column>
+            <column-instance column='[Sub-Category]' derivation='None' name='[none:Sub-Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Profit]' derivation='Sum' name='[sum:Profit:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Sales]' derivation='Sum' name='[sum:Sales:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_ProfitMargin]' derivation='User' name='[usr:Calculation_ProfitMargin:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.superstore01].[none:Sub-Category:nk]' direction='DESC' using='[federated.superstore01].[sum:Profit:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.superstore01].[sum:Profit:qk]' />
+              <text column='[federated.superstore01].[sum:Profit:qk]' />
+              <tooltip column='[federated.superstore01].[sum:Sales:qk]' />
+              <tooltip column='[federated.superstore01].[usr:Calculation_ProfitMargin:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.superstore01].[none:Sub-Category:nk]</rows>
+        <cols>[federated.superstore01].[sum:Profit:qk]</cols>
+      </table>
+      <simple-id uuid='{CFF39596-0E15-5AF7-BB73-E92B89CD5319}' />
+    </worksheet>
+    <worksheet name="Sales vs Profit">
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='12'>Sales vs Profit by Sub-Category</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption="Global Superstore (MySQL v_orders_enriched)" name='federated.superstore01' />
+          </datasources>
+          <datasource-dependencies datasource='federated.superstore01'>
+            <column datatype='real' name='[Profit]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Sales]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Sub-Category]' role='dimension' type='nominal' />
+            <column caption="Profit Margin" datatype='real' name='[Calculation_ProfitMargin]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula="SUM([Profit]) / SUM([Sales])" />
+            </column>
+            <column datatype='string' name='[Category]' role='dimension' type='nominal' />
+            <column-instance column='[Profit]' derivation='Sum' name='[sum:Profit:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Sales]' derivation='Sum' name='[sum:Sales:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Sub-Category]' derivation='None' name='[none:Sub-Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_ProfitMargin]' derivation='User' name='[usr:Calculation_ProfitMargin:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Category]' derivation='None' name='[none:Category:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.superstore01].[none:Category:nk]' />
+              <lod column='[federated.superstore01].[none:Sub-Category:nk]' />
+              <tooltip column='[federated.superstore01].[usr:Calculation_ProfitMargin:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.superstore01].[sum:Profit:qk]</rows>
+        <cols>[federated.superstore01].[sum:Sales:qk]</cols>
+      </table>
+      <simple-id uuid='{57D7F494-8362-53C7-8EAA-5BB3F4256363}' />
+    </worksheet>
+    <worksheet name="Margin by Discount Band">
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='12'>Profit Margin by Discount Band</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption="Global Superstore (MySQL v_orders_enriched)" name='federated.superstore01' />
+          </datasources>
+          <datasource-dependencies datasource='federated.superstore01'>
+            <column caption="Profit Margin" datatype='real' name='[Calculation_ProfitMargin]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula="SUM([Profit]) / SUM([Sales])" />
+            </column>
+            <column datatype='string' name='[Discount Band]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Sales]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Profit]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_ProfitMargin]' derivation='User' name='[usr:Calculation_ProfitMargin:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Discount Band]' derivation='None' name='[none:Discount Band:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Sales]' derivation='Sum' name='[sum:Sales:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Profit]' derivation='Sum' name='[sum:Profit:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.superstore01].[usr:Calculation_ProfitMargin:qk]' />
+              <text column='[federated.superstore01].[usr:Calculation_ProfitMargin:qk]' />
+              <tooltip column='[federated.superstore01].[sum:Sales:qk]' />
+              <tooltip column='[federated.superstore01].[sum:Profit:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.superstore01].[usr:Calculation_ProfitMargin:qk]</rows>
+        <cols>[federated.superstore01].[none:Discount Band:nk]</cols>
+      </table>
+      <simple-id uuid='{9BFA711C-ED06-5E99-A886-1AFC5BC21294}' />
+    </worksheet>
+    <worksheet name="Top 10 Products">
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='12'>Top 10 Products by Sales (colour = margin)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption="Global Superstore (MySQL v_orders_enriched)" name='federated.superstore01' />
+          </datasources>
+          <datasource-dependencies datasource='federated.superstore01'>
+            <column datatype='string' name='[Product Name]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Sales]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Profit]' role='measure' type='quantitative' />
+            <column caption="Profit Margin" datatype='real' name='[Calculation_ProfitMargin]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula="SUM([Profit]) / SUM([Sales])" />
+            </column>
+            <column-instance column='[Product Name]' derivation='None' name='[none:Product Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Sales]' derivation='Sum' name='[sum:Sales:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Profit]' derivation='Sum' name='[sum:Profit:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_ProfitMargin]' derivation='User' name='[usr:Calculation_ProfitMargin:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.superstore01].[none:Product Name:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression="SUM([Sales])" function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:Product Name:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.superstore01].[none:Product Name:nk]' direction='DESC' using='[federated.superstore01].[sum:Sales:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.superstore01].[usr:Calculation_ProfitMargin:qk]' />
+              <text column='[federated.superstore01].[sum:Sales:qk]' />
+              <tooltip column='[federated.superstore01].[sum:Profit:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.superstore01].[none:Product Name:nk]</rows>
+        <cols>[federated.superstore01].[sum:Sales:qk]</cols>
+      </table>
+      <simple-id uuid='{B0A736E6-0807-50C5-B299-B448422C1B28}' />
+    </worksheet>
+    <worksheet name="Margin by Market Region">
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='12'>Profit Margin by Market – Region</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption="Global Superstore (MySQL v_orders_enriched)" name='federated.superstore01' />
+          </datasources>
+          <datasource-dependencies datasource='federated.superstore01'>
+            <column datatype='string' name='[Market Region]' role='dimension' type='nominal' />
+            <column caption="Profit Margin" datatype='real' name='[Calculation_ProfitMargin]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula="SUM([Profit]) / SUM([Sales])" />
+            </column>
+            <column datatype='real' name='[Sales]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Profit]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Regional Manager]' role='dimension' type='nominal' />
+            <column-instance column='[Market Region]' derivation='None' name='[none:Market Region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_ProfitMargin]' derivation='User' name='[usr:Calculation_ProfitMargin:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Sales]' derivation='Sum' name='[sum:Sales:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Profit]' derivation='Sum' name='[sum:Profit:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Regional Manager]' derivation='None' name='[none:Regional Manager:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.superstore01].[none:Market Region:nk]' direction='DESC' using='[federated.superstore01].[usr:Calculation_ProfitMargin:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.superstore01].[usr:Calculation_ProfitMargin:qk]' />
+              <text column='[federated.superstore01].[usr:Calculation_ProfitMargin:qk]' />
+              <tooltip column='[federated.superstore01].[sum:Sales:qk]' />
+              <tooltip column='[federated.superstore01].[sum:Profit:qk]' />
+              <tooltip column='[federated.superstore01].[none:Regional Manager:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.superstore01].[none:Market Region:nk]</rows>
+        <cols>[federated.superstore01].[usr:Calculation_ProfitMargin:qk]</cols>
+      </table>
+      <simple-id uuid='{6B0B2FA2-C2AC-5089-AB25-28DB0D1E4644}' />
+    </worksheet>
+    <worksheet name="Segment Performance">
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='12'>Sales by Segment (label = margin) — click to filter</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption="Global Superstore (MySQL v_orders_enriched)" name='federated.superstore01' />
+          </datasources>
+          <datasource-dependencies datasource='federated.superstore01'>
+            <column datatype='string' name='[Segment]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Sales]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Profit]' role='measure' type='quantitative' />
+            <column caption="Customers" datatype='real' name='[Calculation_Customers]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula="COUNTD([Customer Name])" />
+            </column>
+            <column caption="Profit Margin" datatype='real' name='[Calculation_ProfitMargin]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula="SUM([Profit]) / SUM([Sales])" />
+            </column>
+            <column-instance column='[Segment]' derivation='None' name='[none:Segment:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Sales]' derivation='Sum' name='[sum:Sales:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Profit]' derivation='Sum' name='[sum:Profit:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_Customers]' derivation='User' name='[usr:Calculation_Customers:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_ProfitMargin]' derivation='User' name='[usr:Calculation_ProfitMargin:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.superstore01].[none:Segment:nk]' direction='DESC' using='[federated.superstore01].[sum:Sales:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <text column='[federated.superstore01].[usr:Calculation_ProfitMargin:qk]' />
+              <tooltip column='[federated.superstore01].[sum:Profit:qk]' />
+              <tooltip column='[federated.superstore01].[usr:Calculation_Customers:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.superstore01].[none:Segment:nk]</rows>
+        <cols>[federated.superstore01].[sum:Sales:qk]</cols>
+      </table>
+      <simple-id uuid='{F53E7E3C-8C21-54C2-B0DF-E4556EF25669}' />
+    </worksheet>
+    <worksheet name="Return Rate by Market">
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='12'>Return Rate by Market (only 4 markets track returns)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption="Global Superstore (MySQL v_orders_enriched)" name='federated.superstore01' />
+          </datasources>
+          <datasource-dependencies datasource='federated.superstore01'>
+            <column datatype='string' name='[Market]' role='dimension' type='nominal' />
+            <column caption="Return Rate" datatype='real' name='[Calculation_ReturnRate]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula="COUNTD(IF [Returned] = 'Yes' THEN [Order ID] END) / COUNTD([Order ID])" />
+            </column>
+            <column caption="Orders" datatype='real' name='[Calculation_Orders]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula="COUNTD([Order ID])" />
+            </column>
+            <column datatype='string' name='[Returns Tracked]' role='dimension' type='nominal' />
+            <column-instance column='[Market]' derivation='None' name='[none:Market:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_ReturnRate]' derivation='User' name='[usr:Calculation_ReturnRate:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_Orders]' derivation='User' name='[usr:Calculation_Orders:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Returns Tracked]' derivation='None' name='[none:Returns Tracked:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.superstore01].[none:Market:nk]' direction='DESC' using='[federated.superstore01].[usr:Calculation_ReturnRate:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <text column='[federated.superstore01].[usr:Calculation_ReturnRate:qk]' />
+              <tooltip column='[federated.superstore01].[usr:Calculation_Orders:qk]' />
+              <tooltip column='[federated.superstore01].[none:Returns Tracked:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.superstore01].[none:Market:nk]</rows>
+        <cols>[federated.superstore01].[usr:Calculation_ReturnRate:qk]</cols>
+      </table>
+      <simple-id uuid='{8A1F9F86-993E-558E-A9F7-BA565DEA9CCF}' />
+    </worksheet>
+    <worksheet name="Ship Mode">
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='12'>Average Days to Ship by Ship Mode</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption="Global Superstore (MySQL v_orders_enriched)" name='federated.superstore01' />
+          </datasources>
+          <datasource-dependencies datasource='federated.superstore01'>
+            <column datatype='string' name='[Ship Mode]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Ship Days]' role='measure' type='quantitative' />
+            <column caption="Orders" datatype='real' name='[Calculation_Orders]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula="COUNTD([Order ID])" />
+            </column>
+            <column caption="Profit Margin" datatype='real' name='[Calculation_ProfitMargin]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula="SUM([Profit]) / SUM([Sales])" />
+            </column>
+            <column-instance column='[Ship Mode]' derivation='None' name='[none:Ship Mode:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Ship Days]' derivation='Avg' name='[avg:Ship Days:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_Orders]' derivation='User' name='[usr:Calculation_Orders:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_ProfitMargin]' derivation='User' name='[usr:Calculation_ProfitMargin:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.superstore01].[none:Ship Mode:nk]' direction='ASC' using='[federated.superstore01].[avg:Ship Days:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <text column='[federated.superstore01].[avg:Ship Days:qk]' />
+              <tooltip column='[federated.superstore01].[usr:Calculation_Orders:qk]' />
+              <tooltip column='[federated.superstore01].[usr:Calculation_ProfitMargin:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.superstore01].[none:Ship Mode:nk]</rows>
+        <cols>[federated.superstore01].[avg:Ship Days:qk]</cols>
+      </table>
+      <simple-id uuid='{DB17B894-1DF4-5126-87DA-9DA3DA4A4026}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name="Executive Overview">
+      <style />
+      <size maxheight='900' maxwidth='1400' minheight='900' minwidth='1400' />
+      <zones>
+        <zone h='100000' id='1' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='6667' id='2' type-v2='text' w='100000' x='0' y='0'>
+            <formatted-text>
+              <run bold='true' fontsize='20'>Global Superstore — Executive Overview (2011–2014)</run>
+            </formatted-text>
+          </zone>
+          <zone h='12222' id='3' name="KPI Sales" w='20000' x='0' y='6667' />
+          <zone h='12222' id='4' name="KPI Profit" w='20000' x='20000' y='6667' />
+          <zone h='12222' id='5' name="KPI Margin" w='20000' x='40000' y='6667' />
+          <zone h='12222' id='6' name="KPI Orders" w='20000' x='60000' y='6667' />
+          <zone h='12222' id='7' name="KPI Return Rate" w='20000' x='80000' y='6667' />
+          <zone h='38889' id='8' name="Monthly Sales Trend" w='64286' x='0' y='18889' />
+          <zone h='38889' id='9' name="Sales by Year" w='35714' x='64286' y='18889' />
+          <zone h='42222' id='10' name="Sales by Market" w='50000' x='0' y='57778' />
+          <zone h='42222' id='11' name="Sales by Category" w='50000' x='50000' y='57778' />
+        </zone>
+      </zones>
+      <simple-id uuid='{5F3C9FD1-DABD-57B7-AE39-A9C89D469B24}' />
+    </dashboard>
+    <dashboard name="Product &amp; Profitability">
+      <style />
+      <size maxheight='900' maxwidth='1400' minheight='900' minwidth='1400' />
+      <zones>
+        <zone h='100000' id='1' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='6667' id='2' type-v2='text' w='100000' x='0' y='0'>
+            <formatted-text>
+              <run bold='true' fontsize='20'>Product &amp; Profitability — where margin is made and lost</run>
+            </formatted-text>
+          </zone>
+          <zone h='52222' id='3' name="Profit by Sub-Category" w='42857' x='0' y='6667' />
+          <zone h='52222' id='4' name="Sales vs Profit" w='57143' x='42857' y='6667' />
+          <zone h='41111' id='5' name="Margin by Discount Band" w='42857' x='0' y='58889' />
+          <zone h='41111' id='6' name="Top 10 Products" w='57143' x='42857' y='58889' />
+        </zone>
+      </zones>
+      <simple-id uuid='{279B3D9C-BCEF-58BE-A330-317F09EF9AEA}' />
+    </dashboard>
+    <dashboard name="Customers, Regions &amp; Operations">
+      <style />
+      <size maxheight='900' maxwidth='1400' minheight='900' minwidth='1400' />
+      <zones>
+        <zone h='100000' id='1' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='6667' id='2' type-v2='text' w='100000' x='0' y='0'>
+            <formatted-text>
+              <run bold='true' fontsize='20'>Customers, Regions &amp; Operations</run>
+            </formatted-text>
+          </zone>
+          <zone h='93333' id='3' name="Margin by Market Region" w='50000' x='0' y='6667' />
+          <zone h='31111' id='4' name="Segment Performance" w='50000' x='50000' y='6667' />
+          <zone h='33333' id='5' name="Return Rate by Market" w='50000' x='50000' y='37778' />
+          <zone h='28889' id='6' name="Ship Mode" w='50000' x='50000' y='71111' />
+        </zone>
+      </zones>
+      <simple-id uuid='{ABEE7376-DDFF-565B-B781-63B52E6E2580}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='72'>
+    <window class='dashboard' maximized='true' name="Executive Overview">
+      <viewpoints>
+        <viewpoint name="KPI Sales">
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name="KPI Profit">
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name="KPI Margin">
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name="KPI Orders">
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name="KPI Return Rate">
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name="Monthly Sales Trend">
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name="Sales by Year">
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name="Sales by Market">
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name="Sales by Category">
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{0249B68A-4195-5564-9EE3-8B0407A04FBC}' />
+    </window>
+    <window class='dashboard' name="Product &amp; Profitability">
+      <viewpoints>
+        <viewpoint name="Profit by Sub-Category">
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name="Sales vs Profit">
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name="Margin by Discount Band">
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name="Top 10 Products">
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{656E3353-CB92-59AD-A5E0-B76A26F9C2E8}' />
+    </window>
+    <window class='dashboard' name="Customers, Regions &amp; Operations">
+      <viewpoints>
+        <viewpoint name="Margin by Market Region">
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name="Segment Performance">
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name="Return Rate by Market">
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name="Ship Mode">
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{9421719F-D418-5B5F-8181-F1E9EC569484}' />
+    </window>
+    <window class='worksheet' hidden='true' name="KPI Sales">
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{178BBFF6-65C2-5DCD-8002-3DD3352556E4}' />
+    </window>
+    <window class='worksheet' hidden='true' name="KPI Profit">
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E4B7DF35-A2FA-5AB8-8F17-C0102C26C7F4}' />
+    </window>
+    <window class='worksheet' hidden='true' name="KPI Margin">
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{552E9807-9F04-5F89-82C1-2808295B1DA3}' />
+    </window>
+    <window class='worksheet' hidden='true' name="KPI Orders">
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4904097D-7BA9-5DD8-A807-5FE3FCE7485F}' />
+    </window>
+    <window class='worksheet' hidden='true' name="KPI Return Rate">
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A85511C3-70E0-5F55-9779-C042A90244DC}' />
+    </window>
+    <window class='worksheet' hidden='true' name="Monthly Sales Trend">
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{45742ED6-8B84-57E3-B733-C70A308B4F93}' />
+    </window>
+    <window class='worksheet' hidden='true' name="Sales by Year">
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D79173A9-9260-5621-98BE-501A4659F991}' />
+    </window>
+    <window class='worksheet' hidden='true' name="Sales by Market">
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F35606FA-7F89-5C0C-B60B-6502D1A977D6}' />
+    </window>
+    <window class='worksheet' hidden='true' name="Sales by Category">
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{2ED0DD6C-12E6-5C99-8A3B-534BE592CCFA}' />
+    </window>
+    <window class='worksheet' hidden='true' name="Profit by Sub-Category">
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{695B8D19-5071-5605-B826-E88D5323BAFA}' />
+    </window>
+    <window class='worksheet' hidden='true' name="Sales vs Profit">
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{50D9A644-7E85-52B5-B506-3928ADB88275}' />
+    </window>
+    <window class='worksheet' hidden='true' name="Margin by Discount Band">
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{812EE570-3375-5DCA-9FBA-81C41275CA5A}' />
+    </window>
+    <window class='worksheet' hidden='true' name="Top 10 Products">
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{74AFA4AC-8CA2-5250-821D-FCDF60D590D1}' />
+    </window>
+    <window class='worksheet' hidden='true' name="Margin by Market Region">
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{92EA22E0-7764-54D0-A5BF-02CDC31FB555}' />
+    </window>
+    <window class='worksheet' hidden='true' name="Segment Performance">
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{913EC8DC-9E4C-5DE5-A513-3177682B76C5}' />
+    </window>
+    <window class='worksheet' hidden='true' name="Return Rate by Market">
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D283EFD7-B9D8-5D13-9C7C-65ECC09EE822}' />
+    </window>
+    <window class='worksheet' hidden='true' name="Ship Mode">
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{2C9982BE-84C7-5FE0-852B-3F56DAEFCD93}' />
+    </window>
+  </windows>
+  <_.fcp.ExplainData_AuthorControls.true...explain-data enabled-for-viewer='false' extreme-values-enabled-for-all='false'>
+    <explanation-types>
+      <explanation-type enabled='true' type='number-of-records' />
+      <explanation-type enabled='true' type='average-of-records' />
+      <explanation-type enabled='true' type='aggregated-dimensions' />
+      <explanation-type enabled='true' type='distribution-of-records' />
+      <explanation-type enabled='true' type='unvisualized-measures' />
+      <explanation-type enabled='true' type='extreme-values' />
+      <_.fcp.ExplainData_NullValueExplanation.true...explanation-type enabled='true' type='null-value' />
+      <explanation-type enabled='true' type='tvd-single-value' />
+      <explanation-type enabled='true' type='ad-single-value' />
+    </explanation-types>
+  </_.fcp.ExplainData_AuthorControls.true...explain-data>
+</workbook>

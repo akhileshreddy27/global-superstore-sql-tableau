@@ -1,0 +1,16 @@
+check_name,value
+orders_rows,51290
+returns_rows,1173
+people_rows,13
+distinct_order_ids,25035
+order_ids_in_2_markets,37
+duplicate_order_lines,9
+null_postal_code,41296
+negative_ship_days,0
+returns_not_matching_an_order,0
+regions_without_manager,0
+returned_flag_mismatches,7
+distinct_customer_ids,1590
+distinct_customer_names,795
+distinct_product_ids,10292
+distinct_product_names,3788

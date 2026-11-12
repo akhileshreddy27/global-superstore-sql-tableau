@@ -1,0 +1,11 @@
+sales_rank,product_name,Category,sub_category,sales,profit,quantity,orders,profit_margin_pct
+1,"Apple Smart Phone, Full Size",Technology,Phones,86935.78,5921.58,171,51,6.81
+2,"Cisco Smart Phone, Full Size",Technology,Phones,76441.53,17238.52,139,38,22.55
+3,"Motorola Smart Phone, Full Size",Technology,Phones,73156.30,17027.11,134,38,23.27
+4,"Nokia Smart Phone, Full Size",Technology,Phones,71904.56,9938.20,147,47,13.82
+5,Canon imageCLASS 2200 Advanced Copier,Technology,Copiers,61599.82,25199.93,20,5,40.91
+6,"Hon Executive Leather Armchair, Adjustable",Furniture,Chairs,58193.48,5997.25,169,49,10.31
+7,"Office Star Executive Leather Armchair, Adjustable",Furniture,Chairs,50661.68,4710.98,141,45,9.30
+8,"Harbour Creations Executive Leather Armchair, Adjustable",Furniture,Chairs,50121.52,10427.33,142,39,20.80
+9,"Samsung Smart Phone, Cordless",Technology,Phones,48653.46,-198.09,108,25,-0.41
+10,"Nokia Smart Phone, with Caller ID",Technology,Phones,47877.79,9465.33,96,24,19.77

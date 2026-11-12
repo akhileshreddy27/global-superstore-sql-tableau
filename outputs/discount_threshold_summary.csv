@@ -1,0 +1,3 @@
+discount_group,order_lines,sales,profit,profit_margin_pct
+Discount <= 20%,39962,10712291.13,2282139.38,21.30
+Discount > 20%,11328,1930210.78,-814682.09,-42.21

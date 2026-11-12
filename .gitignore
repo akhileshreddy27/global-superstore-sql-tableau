@@ -1,0 +1,20 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# Tableau temp / recovery files
+*.twbr
+~*.twb
+~*.twbx
+*.tmp
+hyperd*.log
+
+# Editors
+.vscode/
+.idea/
