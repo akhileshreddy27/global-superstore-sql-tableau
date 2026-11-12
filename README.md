@@ -3,7 +3,7 @@
 End-to-end sales analysis of the Global Superstore dataset (51,290 order lines, 2011–2014):
 **MySQL 8** for cleaning and analysis → **Excel** summary workbook → **Tableau** interactive dashboards.
 
-**Live dashboard:** _add your Tableau Public link here after publishing_
+**Tableau dashboard:** download [`tableau/Global_Superstore_Dashboard.twbx`](tableau/Global_Superstore_Dashboard.twbx) and open it in the free [Tableau Public desktop app](https://public.tableau.com/app/download). It contains 3 interactive dashboards, with the data built in.
 
 ![Profit by sub-category](charts/subcategory_profit.png)
 
@@ -117,7 +117,7 @@ python3 scripts/build_tableau_workbook.py
 | [`tableau/Global_Superstore_Dashboard.twbx`](tableau/Global_Superstore_Dashboard.twbx) | Tableau workbook (open this one): 3 interactive dashboards, 17 worksheets, with a built-in Hyper extract |
 | [`tableau/Global_Superstore_Dashboard.twb`](tableau/Global_Superstore_Dashboard.twb) + [`tableau/Data/`](tableau/Data/) | Same workbook, unpackaged, for reading the XML |
 | [`tableau/superstore_tableau_source.csv`](tableau/superstore_tableau_source.csv) | Line-level data exported from the MySQL view `v_orders_enriched` |
-| [`TABLEAU_DASHBOARD_GUIDE.md`](TABLEAU_DASHBOARD_GUIDE.md) | Dashboard contents, calculated fields, how to publish to Tableau Public |
+| [`TABLEAU_DASHBOARD_GUIDE.md`](TABLEAU_DASHBOARD_GUIDE.md) | Dashboard contents, calculated fields, how to open the workbook |
 | [`PROJECT_REPORT.md`](PROJECT_REPORT.md) | Full project report |
 
 ## Resume bullets
@@ -126,5 +126,3 @@ python3 scripts/build_tableau_workbook.py
 - Analyzed **51K+ retail order lines (25K orders)** in **MySQL 8**, writing 22 queries with **joins, CTEs, aggregations and window functions** (LAG, RANK, running totals, moving averages) to uncover sales and profitability trends.
 - Built an **interactive 3-dashboard Tableau workbook** tracking **$12.64M sales, $1.47M profit and 11.61% profit margin**, with click-to-filter actions across market, sub-category and segment.
 - Identified **90.3% sales growth from 2011–2014** and showed that discounts above 20% turned a 21% margin into –42%, **erasing $815K of profit**.
-
-> Add your Tableau Public link to the second bullet once it's published (see the publishing steps in `TABLEAU_DASHBOARD_GUIDE.md`).

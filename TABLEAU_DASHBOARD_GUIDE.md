@@ -51,17 +51,16 @@ Returns and People already joined in SQL, plus derived fields:
 - Return Rate by Market (the tooltip shows whether the market tracks returns)
 - Average Days to Ship by Ship Mode
 
-## Open and publish to Tableau Public
+## Open the workbook
 
 The data ships as a Hyper extract (`tableau/Data/superstore_extract.hyper`, built from the MySQL
-export with Tableau's Hyper API) because Tableau Public only opens extract-based workbooks.
+export with Tableau's Hyper API), so the workbook opens without any database connection.
 
-1. In Tableau Public, use **File → Open…** and choose `tableau/Global_Superstore_Dashboard.twbx`.
-   It opens directly on the Executive Overview dashboard.
-2. Review the three dashboard tabs at the bottom and adjust colours or sizes if you like.
-3. **File → Save to Tableau Public As…**, sign in, and name it `Global Superstore Sales Dashboard`.
-4. On the published page, open **Settings** and turn on **Show workbook sheets as tabs**.
-5. Copy the public URL into your resume and the README.
+1. Install the free [Tableau Public desktop app](https://public.tableau.com/app/download), or use Tableau Desktop.
+2. **File → Open…** and choose `tableau/Global_Superstore_Dashboard.twbx`.
+   It opens on the Executive Overview dashboard.
+3. Switch between the three dashboards with the tabs at the bottom. Click a bar on the
+   market, sub-category or segment charts to filter the rest of that dashboard.
 
 ## Story to present
 
